@@ -60,7 +60,8 @@ body {
 
 .a_nav_img {
     margin: 0px 17px;
-    display: block;
+   // display: block;
+    text-decoration: none;
 }
 
 .a_nav_img:first-child {
@@ -72,9 +73,9 @@ body {
 
 }
 
-// .nav_img {
- 
-// }
+ .nav_img {
+    fill: #E8E8E8;
+ }
 
 .nav_menu_button {
 
@@ -94,16 +95,30 @@ body {
 
 .header_slider_bg {
     background-color: $pink_bg;
+    //height: 641.25px;
+    width: 100%;
 }
 
 .header_slider {
-    height: 764px;
-    background-image: url(../img/slider1.png);
+    height: 100%;
+    //height: 764px;
+    //background-image: url(../img/slider1.png);
     background-repeat: no-repeat;
-    background-position-x: -210px;
+   // background-position-x: -210px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;
+    position: relative;
+    
+
+
+    &_video {
+       // position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        //height: 100%;
+    }
 
 }
 
@@ -111,9 +126,13 @@ body {
     width: 390px;
     font-size: 32px;
     font-weight: 700;
-    margin-right: 100px;
+    //margin-right: 100px;
+    margin-left: 30px;
     border-left: 12px solid $attention_color;
     padding-left: 15px;
+    z-index: 2;
+    position: absolute;
+    
 
     &_big {
         font-size: 48px;
@@ -176,6 +195,7 @@ body {
     width: 31.5%;
     background-color: $goods_card_bg;
     margin-bottom: 2.2%;
+    list-style: none;
 
     &_h1 {
         text-align: center;
@@ -377,13 +397,36 @@ body {
 
     &_ss {
         width: 32px;
-        margin: 0 3.6px;
+        height: 32px;
+        // margin: 0 3.6px;
     }
 
     &_ss:last-child {
         margin-right: 0px;
     }
 
+    &_rght {
+        display: flex;
+        
+        &_href {
+        text-decoration: none;
+        color: $dark_section;
+        background-color: #fff;
+        text-align: center;
+        width: 32px;
+        height: 32px;
+        display: flex;
+        font-size: 16px;
+        margin-left: 8px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &_icon {
+        // height: 100%;
+        // width: 100%;
+    }
+    }
 }
 
 .header_category {
@@ -419,7 +462,7 @@ body {
         color: #636363;     
     }
 
-    li:last-child {
+    li:last-child a {
         color: $attention_color;
         font-weight: 700;
     }
@@ -456,15 +499,17 @@ body {
 
         &_summary {
             display: block;
+            color: $dark_txt;
+            fill: $dark_txt;
 
             &::-webkit-details-marker {
                 display: none;
             }
 
-            &::after {
-                content: url(../img/filter.svg);
-                margin-left: 10px;
-            }
+            // &::after {
+            //     content:  url(../img/filter.svg);
+            //     margin-left: 10px;
+            // }
         }
         
     }
@@ -474,7 +519,7 @@ body {
         margin: auto;
         font-weight: 400;
         position: absolute;
-        left: 34%;
+        left: 37%;
         top: calc(50% - 9px);
      
     }
@@ -530,8 +575,8 @@ body {
         }
         
         &_img {
-            height: 100%;
-            display: block;
+            // height: 100%;
+            // display: block;
             cursor: pointer;
             margin: 0 15px;
         }
