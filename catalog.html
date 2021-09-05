@@ -1,7 +1,7 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
@@ -11,6 +11,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
         rel="stylesheet">
+
     <script src="https://kit.fontawesome.com/0a0bd09c22.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
@@ -61,115 +62,186 @@
 
             </div>
         </nav>
-        <section class="header_slider_bg">
-            <div class="container header_slider">
-
-                <video src="media/main_video.mp4" class="header_slider_video" width="100%" loop autoplay muted></video>
-                <div class="slider_text"><span class="slider_text_big">THE BRAND</span>
-                    OF&nbsp;LUXERIOUS <span class="slider_text_red">FASION</span></div>
-            </div>
-        </section>
-
+        <div class="header_category_bg">
+            <section class="container header_category_block">
+                <h1 class="h1_category">NEW ARRIVALS</h1>
+                <ul class="breadcrumps">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">MEN</a></li>
+                    <li><a href="#">NEW ARRIVALS</a></li>
+                </ul>
+            </section>
+        </div>
     </header>
 
-    <section class="category_bg">
-        <div class="container category">
-            <div class="category_box">
-                <img src="img/for_woman.png" alt="" class="category_img">
-                <div class="category_txt">30% OFF<br>
-                    <span class="category_alert">FOR WOMEN</span>
-                </div>
-            </div>
-            <div class="category_box">
-                <img src="img/for_man.png" alt="" class="category_img">
-                <div class="category_txt">HOT DEAL<br>
-                    <span class="category_alert">FOR MEN
-                </div>
-            </div>
-            <div class="category_box">
-                <img src="img/for_kids.png" alt="" class="category_img">
-                <div class="category_txt">NEW ARRIVALS<br>
-                    <span class="category_alert">FOR KIDS</span>
-                </div>
-            </div>
-            <div class="category_box_dwn">
-                <img src="img/accesories.png" alt="" class="category_img">
-                <div class="category_txt">LUXIROUS & TRENDY<br>
-                    <span class="category_alert">ACCESORIES</span>
-                </div>
+    <section class="filter_bg">
+        <div class="container filter">
+            <details class="filter_main">
+                <summary class="filter_main_summary">FILTER &nbsp;&nbsp;<svg width="15" height="10" viewBox="0 0 15 10"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z" />
+                    </svg>
+                </summary>
+                <details class="filter_child">
+                    <summary>CATEGORY</summary>
+                </details>
+                <details class="filter_child">
+                    <summary>BRAND</summary>
+                </details>
+                <details class="filter_child">
+                    <summary>DESIGNER</summary>
+                </details>
+            </details>
+
+            <div class="filter_little">
+                <details class="filter_child">
+                    <summary class="filter_child_summary">TRENDING NOW</summary>
+                    1<br>
+                    2<br>
+                    3<br>
+                </details>
+                <details class="filter_child">
+                    <summary class="filter_child_summary">SIZE</summary>
+                    1<br>
+                    2<br>
+                    3<br>
+                </details>
+                <details class="filter_child">
+                    <summary class="filter_child_summary">PRICE</summary>
+                    1<br>
+                    2<br>
+                    3<br>
+                </details>
             </div>
         </div>
     </section>
 
     <section class="container">
-        <div class="goods_h1">Fetured Items</div>
-        <div class="goods_h2">Shop for items based on what we featured in this week</div>
-        <ul class="goods_list">
-            <li class="goods">
+
+        <article class="goods_list">
+            <div class="goods">
                 <img src="img/product_1.png" alt="img description" class="goods_img">
                 <div class="goods_name">ELLERY X M'O CAPSULE</div>
-                <div class="goods_description">Known for her sculptural takes on traditional tailoring, Australian
+                <div class="goods_description">Known for her sculptural takes on traditional tailoring,
+                    Australian
                     arbiter of cool Kym Ellery teams up with Moda Operandi.</div>
                 <div class="goods_price">$52.00</div>
-            </li>
-            <li class="goods">
-                <img src="img/product_2.png" alt="img description" class="goods_img">
+            </div>
+            <div class="goods">
+                <img src="img/product_9.png" alt="img description" class="goods_img">
                 <div class="goods_name">ELLERY X M'O CAPSULE</div>
-                <div class="goods_description">Known for her sculptural takes on traditional tailoring, Australian
+                <div class="goods_description">Known for her sculptural takes on traditional tailoring,
+                    Australian
                     arbiter of cool Kym Ellery teams up with Moda Operandi.</div>
                 <div class="goods_price">$52.00</div>
-            </li>
-            <li class="goods">
+            </div>
+            <div class="goods">
                 <img src="img/product_3.png" alt="img description" class="goods_img">
                 <div class="goods_name">ELLERY X M'O CAPSULE</div>
-                <div class="goods_description">Known for her sculptural takes on traditional tailoring, Australian
+                <div class="goods_description">Known for her sculptural takes on traditional tailoring,
+                    Australian
                     arbiter of cool Kym Ellery teams up with Moda Operandi.</div>
                 <div class="goods_price">$52.00</div>
-            </li>
-            <li class="goods">
+            </div>
+            <div class="goods">
                 <img src="img/product_4.png" alt="img description" class="goods_img">
                 <div class="goods_name">ELLERY X M'O CAPSULE</div>
-                <div class="goods_description">Known for her sculptural takes on traditional tailoring, Australian
+                <div class="goods_description">Known for her sculptural takes on traditional tailoring,
+                    Australian
                     arbiter of cool Kym Ellery teams up with Moda Operandi.</div>
                 <div class="goods_price">$52.00</div>
-            </li>
-            <li class="goods">
-                <img src="img/product_5.png" alt="img description" class="goods_img">
+            </div>
+            <div class="goods">
+                <img src="img/product_8.png" alt="img description" class="goods_img">
                 <div class="goods_name">ELLERY X M'O CAPSULE</div>
-                <div class="goods_description">Known for her sculptural takes on traditional tailoring, Australian
+                <div class="goods_description">Known for her sculptural takes on traditional tailoring,
+                    Australian
                     arbiter of cool Kym Ellery teams up with Moda Operandi.</div>
                 <div class="goods_price">$52.00</div>
-            </li>
-            <li class="goods">
-                <img src="img/product_6.png" alt="img description" class="goods_img">
+            </div>
+            <div class="goods">
+                <img src="img/product_7.png" alt="img description" class="goods_img">
                 <div class="goods_name">ELLERY X M'O CAPSULE</div>
-                <div class="goods_description">Known for her sculptural takes on traditional tailoring, Australian
+                <div class="goods_description">Known for her sculptural takes on traditional tailoring,
+                    Australian
                     arbiter of cool Kym Ellery teams up with Moda Operandi.</div>
                 <div class="goods_price">$52.00</div>
-            </li>
-        </ul>
-        <button class="goods_button">Browse All Product</button>
+            </div>
+            <div class="goods">
+                <img src="img/product_12.png" alt="img description" class="goods_img">
+                <div class="goods_name">ELLERY X M'O CAPSULE</div>
+                <div class="goods_description">Known for her sculptural takes on traditional tailoring,
+                    Australian
+                    arbiter of cool Kym Ellery teams up with Moda Operandi.</div>
+                <div class="goods_price">$52.00</div>
+            </div>
+            <div class="goods">
+                <img src="img/product_11.png" alt="img description" class="goods_img">
+                <div class="goods_name">ELLERY X M'O CAPSULE</div>
+                <div class="goods_description">Known for her sculptural takes on traditional tailoring,
+                    Australian
+                    arbiter of cool Kym Ellery teams up with Moda Operandi.</div>
+                <div class="goods_price">$52.00</div>
+            </div>
+            <div class="goods">
+                <img src="img/product_10.png" alt="img description" class="goods_img">
+                <div class="goods_name">ELLERY X M'O CAPSULE</div>
+                <div class="goods_description">Known for her sculptural takes on traditional tailoring,
+                    Australian
+                    arbiter of cool Kym Ellery teams up with Moda Operandi.</div>
+                <div class="goods_price">$52.00</div>
+            </div>
+        </article>
+        <div class="pages_list">
+            <div class="pages_list_box">
+                <a>
+                    <!-- <img src="img/strelka_left.svg" > -->
+                    <svg width="9" height="14" viewBox="0 0 9 14" class="pages_list_box_img"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.99512 2L3.99512 7L8.99512 12L7.99512 14L0.995117 7L7.99512 0L8.99512 2Z" />
+                    </svg>
+                </a>
+                <a class="pages_list_box_num">1</a>
+                <a class="pages_list_box_num">2</a>
+                <a class="pages_list_box_num">3</a>
+                <a class="pages_list_box_num">4</a>
+                <a class="pages_list_box_num">5</a>
+                <a class="pages_list_box_num">6</a>
+                <a class="pages_list_box_num">...</a>
+                <a class="pages_list_box_num">20</a>
+                <a>
+                    <!-- <img src="img/strelka_right.svg"> -->
+                    <svg width="9" height="14" class="pages_list_box_img" viewBox="0 0 9 14"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.994995 12L5.995 7L0.994995 2L1.995 0L8.995 7L1.995 14L0.994995 12Z" />
+                    </svg>
+                </a>
+            </div>
     </section>
     <div class="benefits_bg">
         <section class="container benefits">
             <div class="benefits_box">
                 <img src="img/delivery.svg" alt="img_description" class="benefits_img">
                 <div class="benefits_head">Free Delivery</div><br>
-                <div class="benefits_description">Worldwide delivery on all. Authorit tively morph next-generation
+                <div class="benefits_description">Worldwide delivery on all. Authorit tively morph
+                    next-generation
                     innov
                     tion with extensive models.</div>
             </div>
             <div class="benefits_box">
                 <img src="img/discount.svg" alt="img_description" class="benefits_img">
                 <div class="benefits_head">Sales & discounts</div><br>
-                <div class="benefits_description">Worldwide delivery on all. Authorit tively morph next-generation
+                <div class="benefits_description">Worldwide delivery on all. Authorit tively morph
+                    next-generation
                     innov
                     tion with extensive models.</div>
             </div>
             <div class="benefits_box">
                 <img src="img/king.svg" alt="img_description" class="benefits_img">
                 <div class="benefits_head">Quality assurance</div><br>
-                <div class="benefits_description">Worldwide delivery on all. Authorit tively morph next-generation
+                <div class="benefits_description">Worldwide delivery on all. Authorit tively morph
+                    next-generation
                     innov
                     tion with extensive models.</div>
             </div>
